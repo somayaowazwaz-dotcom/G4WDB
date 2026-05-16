@@ -1,0 +1,104 @@
+// ✅ plugins {} MUST be first - no code before this block!
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+// 🔐 Load keystore properties (AFTER plugins, BEFORE android)
+def keystoreProperties = new Properties()
+def keystorePropertiesFile = rootProject.file('key.properties')
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+
+android {
+    namespace = "com.g4wdb.app"  // ✅ Update to your actual package name
+    compileSdk = 36
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_17
+    }
+
+    defaultConfig {
+        applicationId = "com.g4wdb.app"  // ✅ Update to your actual package name
+        minSdk = 26  // ✅ Flutter Gemma requires minSdk 26+
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+        
+        // ❌ REMOVE this block when using --split-per-abi:
+        // ndk {
+        //     abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86_64'
+        // }
+    }
+
+    // ✅ Signing configuration for release builds
+    signingConfigs {
+        release {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    // ✅ Allow large model files without compression
+    androidResources {
+        noCompress 'litertlm', 'tflite', 'bin'
+    }
+
+    // ✅ Ensure native libraries are packaged correctly
+    packagingOptions {
+        jniLibs {
+            useLegacyPackaging = true
+        }
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/*.kotlin_module'
+    }
+    
+    // ❌ Disabled splits to avoid conflict with Flutter's automatic ndk.abiFilters
+    splits {
+        abi {
+            enable false
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.22"
+    
+    // Optional: Uncomment if you get TFLite class not found errors
+    // implementation 'org.tensorflow:tensorflow-lite-task-text:0.4.4'
+    // implementation 'org.tensorflow:tensorflow-lite-gpu:2.14.0'
+    // implementation 'org.tensorflow:tensorflow-lite-support:0.4.4'
+}

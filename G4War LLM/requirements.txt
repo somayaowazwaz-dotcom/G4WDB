@@ -1,0 +1,11 @@
+torch
+torchvision
+torchaudio
+transformers
+peft
+bitsandbytes
+accelerate
+datasets
+trl
+sentencepiece
+protobuf

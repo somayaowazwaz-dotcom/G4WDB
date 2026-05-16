@@ -1,0 +1,74 @@
+{
+  "app": {
+    "title": "G4WDB AI Agent",
+    "offline": "Offline Mode",
+    "online": "Online"
+  },
+  "medical": {
+    "triage": "Medical Triage",
+    "wound_assessment": "Wound Assessment",
+    "tourniquet": "Tourniquet Application",
+    "immediate": "Immediate",
+    "delayed": "Delayed",
+    "minimal": "Minimal"
+  },
+  "uxo": {
+    "recognition": "UXO Recognition",
+    "scan": "Scan Area",
+    "danger": "Danger Zone",
+    "safe_distance": "Safe Distance"
+  },
+  "mesh": {
+    "network": "Mesh Network",
+    "connected": "Connected",
+    "devices": "Devices Nearby",
+    "delivery_rate": "Delivery Rate"
+  },
+  "family": {
+    "search": "Family Search",
+    "find": "Find Loved Ones",
+    "privacy": "Privacy Protected"
+  },
+  "silent": {
+    "mode": "Silent Mode",
+    "active": "Covert Mode Active",
+    "haptic": "Haptic Feedback Only"
+  },
+  "survival": {
+    "tracker": "Survival Tracker",
+    "household": "Household Size",
+    "status": "Supply Status",
+    "days_left": "days left",
+    "critical": "CRITICAL",
+    "low": "LOW",
+    "ok": "OK"
+  },
+  "settings": {
+    "title": "Settings",
+    "calibration_title": "Calibration & System Readiness",
+    "preferences_title": "Preferences & Accessibility",
+    "gemma_status": "Gemma AI Engine (G4 e2b)",
+    "camera_status": "Vision System (Camera)",
+    "speakers_status": "Audio Output (Speakers)",
+    "bluetooth_status": "Mesh Communications (Bluetooth)",
+    "mic_status": "Voice Input (Mic/STT/TTS)",
+    "recognition_status": "Image Recognition Agent",
+    "mesh_status": "Mesh Node Search",
+    "silent_status": "Silent Mode Controller",
+    "survival_status": "Survival Tracker Engine",
+    "high_contrast": "High Contrast Mode",
+    "high_contrast_desc": "Improves visibility in sunlight",
+    "language": "System Language",
+    "select_language": "Select Language"
+  },
+  "chat": {
+    "title": "Chat with Gemma 4",
+    "offline_ready": "Offline mode ready",
+    "offline_not_ready": "Offline mode not available",
+    "welcome": "Welcome to Gemma 4 Chat",
+    "instructions": "Ask me anything! I work completely offline.",
+    "type_message": "Type your message...",
+    "typing": "Gemma is thinking...",
+    "internet_offline": "Internet is offline"
+  }
+}

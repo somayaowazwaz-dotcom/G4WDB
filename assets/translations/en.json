@@ -1,0 +1,259 @@
+{
+  "app": {
+    "title": "G4WDB AI Agent",
+    "offline": "Offline Mode",
+    "online": "Online"
+  },
+  "medical": {
+    "triage": "Medical Triage",
+    "wound_assessment": "Wound Assessment",
+    "tourniquet": "Tourniquet Application",
+    "immediate": "Immediate",
+    "delayed": "Delayed",
+    "minimal": "Minimal"
+  },
+  "uxo": {
+    "recognition": "UXO Recognition",
+    "scan": "Scan Area",
+    "danger": "Danger Zone",
+    "safe_distance": "Safe Distance"
+  },
+  "mesh": {
+    "network": "Mesh Network",
+    "connected": "Connected",
+    "devices": "Devices Nearby",
+    "delivery_rate": "Delivery Rate"
+  },
+  "family": {
+    "search": "Family Search",
+    "find": "Find Loved Ones",
+    "privacy": "Privacy Protected"
+  },
+  "silent": {
+    "mode": "Silent Mode",
+    "active": "Covert Mode Active",
+    "haptic": "Haptic Feedback Only"
+  },
+  "survival": {
+    "tracker": "Survival Tracker",
+    "household": "Household Size",
+    "status": "Supply Status",
+    "days_left": "days left",
+    "critical": "CRITICAL",
+    "low": "LOW",
+    "ok": "OK"
+  },
+  "settings": {
+    "title": "Settings",
+    "calibration_title": "Calibration & System Readiness",
+    "preferences_title": "Preferences & Accessibility",
+    "gemma_status": "Gemma AI Engine (G4 e2b)",
+    "camera_status": "Vision System (Camera)",
+    "speakers_status": "Audio Output (Speakers)",
+    "bluetooth_status": "Mesh Communications (Bluetooth)",
+    "mic_status": "Voice Input (Mic/STT/TTS)",
+    "recognition_status": "Image Recognition Agent",
+    "mesh_status": "Mesh Node Search",
+    "silent_status": "Silent Mode Controller",
+    "survival_status": "Survival Tracker Engine",
+    "high_contrast": "High Contrast Mode",
+    "high_contrast_desc": "Improves visibility in sunlight",
+    "language": "System Language",
+    "select_language": "Select Language"
+  },
+  "chat": {
+    "title": "Chat with Gemma 4",
+    "offline_ready": "Offline mode ready",
+    "offline_not_ready": "Offline mode not available",
+    "welcome": "Welcome to Gemma 4 Chat",
+    "instructions": "Ask me anything! I work completely offline.",
+    "type_message": "Type your message...",
+    "typing": "Gemma is thinking...",
+    "internet_offline": "Internet is offline",
+    "send": "Send",
+    "name_response": "This is the G4WDB project, Gemma 4 War Disaster Buddy, an offline humanitarian AI assistant for conflict zones."
+  },
+  "nav": {
+    "home": "Home",
+    "agents": "Agents",
+    "framework": "Framework",
+    "gallery": "Gallery",
+    "writeup": "Writeup"
+  },
+  "hero": {
+    "title": "G4WDB",
+    "caption": "Gemma 4 War Disaster Buddy — an offline AI survival assistant for armed conflict zones.",
+    "primary": "Explore Agents",
+    "secondary": "Read the Abstract"
+  },
+  "page": {
+    "index": {
+      "title": "G4WDB AI Agent | Humanitarian System",
+      "what_title": "G4WDB: What it Does",
+      "what_text": "G4WDB is an offline, privacy-preserving mobile application built around Gemma 4 E2B. It supports survivors in conflict areas where internet and cell service are unavailable, and it runs across Android, iOS, and Windows-ready form factors."
+    },
+    "coverage": {
+      "title": "Platform Coverage"
+    },
+    "links": {
+      "title": "Project Links",
+      "text": "Watch our demo and access the code repository to review the full G4WDB implementation.",
+      "youtube": "YouTube Channel",
+      "github": "GitHub Repository"
+    },
+    "agents": {
+      "title": "Agents & Features",
+      "description": "G4WDB is built around mission-focused agents that operate offline, preserve privacy, and support survival in active conflict zones.",
+      "experience_title": "Experience Enhancements",
+      "features": {
+        "accessibility": "Accessibility",
+        "accessibility_desc": "High-contrast UI, large tap targets, offline localization, and assistive navigation support.",
+        "xr": "VR / AR / XR",
+        "xr_desc": "Immersive training and hazard annotation paths for field teams and humanitarian trainers.",
+        "cross_platform": "Windows, iOS, Android",
+        "cross_platform_desc": "Designed as a cross-platform solution with mobile-first Android support and desktop / iOS companions.",
+        "offline_first": "Offline First",
+        "offline_first_desc": "All processing, data access, and model inference happen on-device with no network dependency."
+      },
+      "resources_title": "Resources",
+      "resources_text": "Learn more about G4WDB through our code base and demo channel.",
+      "youtube": "Watch on YouTube",
+      "github": "View GitHub"
+    },
+    "framework": {
+      "title": "System Architecture",
+      "description": "G4WDB combines offline AI, device-native data storage, secure peer-to-peer synchronization, and cross-platform app delivery to support conflict-affected users without internet.",
+      "diagram_title": "Architecture Diagram",
+      "core_title": "Core Components",
+      "core_features": {
+        "one": "On-device AI inference with sub-500MB model footprint",
+        "two": "SQLite local databases for fast offline lookups and secure history",
+        "three": "Bluetooth mesh for peer-to-peer hazard propagation",
+        "four": "Platform-ready app formats for Android, iOS, Windows, and extended XR interfaces"
+      }
+    },
+    "gallery": {
+      "title": "Gallery",
+      "description": "Visual showcase of G4WDB in action across various humanitarian scenarios."
+    },
+    "writeup": {
+      "title": "G4WDB Writeup",
+      "subtitle": "G4WDB: Gemma 4 War Disaster Buddy Offline",
+      "description": "An AI survival assistant for armed conflict zones, designed for the Gemma 4 Good Hackathon. G4WDB delivers offline, privacy-preserving intelligence when cellular infrastructure is destroyed and the internet is absent.",
+      "abstract_title": "Abstract",
+      "abstract_text": "Over 100 million people currently live in active war zones where communication infrastructure is systematically destroyed, internet access is unavailable, and cloud-based AI assistance is impossible. G4WDB uses Gemma 4 E2B to provide medical triage, UXO recognition, Bluetooth mesh danger mapping, and family reunification entirely on-device.",
+      "problem_title": "Problem Statement",
+      "problem": {
+        "one": "War zones frequently face deliberate destruction of cell towers, long-term blackouts, and no reliable connectivity.",
+        "two": "Existing cloud AI assistants fail without internet, while static offline manuals cannot answer context-specific questions.",
+        "three": "No current solution provides privacy-preserving family reunification offline.",
+        "four": "Conflict-specific threats such as shrapnel injuries, unexploded ordnance, and sniper danger require specialized support."
+      },
+      "solution_title": "Technical Solution",
+      "solution_intro": "G4WDB is optimized for mid-range Android hardware and includes:",
+      "solution": {
+        "one": "Gemma 4 E2B (2.6B parameters) quantized to 4-bit with LiteRT for sub-500MB footprint.",
+        "two": "Silent-mode touch interaction and vibration feedback for tactical safety.",
+        "three": "Multimodal UXO recognition using onboard camera analysis.",
+        "four": "Bluetooth mesh danger zone mapping and encrypted family search.",
+        "five": "Cross-platform support for Android, iOS, Windows, and future VR/AR/XR interfaces."
+      },
+      "features_title": "Core Features",
+      "accessibility_title": "Accessibility & Experience",
+      "accessibility": {
+        "one": "High-contrast, large tap targets, and offline localization for inclusive access.",
+        "two": "VR/AR/XR-ready interfaces for training, hazard annotation, and immersive mission planning.",
+        "three": "Support for Windows, iOS, and Android app formats to cover field and command center use cases."
+      },
+      "ethics_title": "Ethical Safeguards",
+      "ethics": {
+        "one": "No weaponization: The system cannot identify targets or support offensive operations.",
+        "two": "Data privacy by design: medical queries are never stored, camera inputs are processed in RAM only, and danger reports are anonymized.",
+        "three": "First-time consent screen clearly explains offline operation, sharing policies, and deletion controls."
+      },
+      "resources_title": "Submission Resources",
+      "resources_text": "Project video, source code, demo APK, and model weights are available through the following channels:",
+      "youtube": "YouTube Channel",
+      "github": "GitHub Repository",
+      "team_title": "Team & Track",
+      "team_label": "Team Name:",
+      "submitted_label": "Submitted to:",
+      "tracks_label": "Tracks:"
+    },
+    "footer": {
+      "text": "&copy; 2026 G4WDB Project. Licensed under <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\" target=\"_blank\">CC BY-NC-SA 4.0</a>"
+    }
+  },
+  "cards": {
+    "medical": "Medical Triage",
+    "medical_desc": "Offers silent, touch-based casualty assessment using TCCC protocols and cached medical knowledge.",
+    "survival": "Survival Tracker",
+    "survival_desc": "Continuously monitors context, resources, and danger to provide actionable survival advice.",
+    "uxo": "UXO Recognition",
+    "uxo_desc": "Identifies unexploded ordnance from offline vision models and gives deterministic hazard guidance.",
+    "bluetooth": "Bluetooth Mesh",
+    "bluetooth_desc": "Shares anonymized danger reports and family reunification signals without central servers.",
+    "silent": "Silent Mode",
+    "silent_desc": "Touch-based, vibration-first operation that keeps users safe in active combat environments.",
+    "family": "Family Reunification",
+    "family_desc": "Enables privacy-preserving matching using encrypted bloom filters over Bluetooth.",
+    "accessibility": "Accessibility",
+    "accessibility_desc": "Designed for inclusive use with high-contrast UI, large tap targets, offline language support, and XR-ready guidance."
+  },
+  "features": {
+    "accessibility": "Accessibility",
+    "accessibility_desc": "High-contrast UI, large tap targets, offline localization, and assistive navigation support.",
+    "xr": "VR / AR / XR",
+    "xr_desc": "Immersive training and hazard annotation paths for field teams and humanitarian trainers.",
+    "cross_platform": "Windows, iOS, Android",
+    "cross_platform_desc": "Designed as a cross-platform solution with mobile-first Android support and desktop / iOS companions.",
+    "offline_first": "Offline First",
+    "offline_first_desc": "All processing, data access, and model inference happen on-device with no network dependency."
+  },
+  "framework": {
+    "cards": {
+      "e2b": "Gemma 4 E2B + LiteRT",
+      "e2b_desc": "Efficient on-device AI inference in a 4-bit quantized model footprint under 500MB.",
+      "cross_platform": "Cross-Platform Apps",
+      "cross_platform_desc": "Mobile-first Android with planned iOS and Windows deployment for command centers and rugged PCs.",
+      "offline_mesh": "Offline Mesh Network",
+      "offline_mesh_desc": "Bluetooth peer-to-peer danger zone mapping and family search without any centralized server.",
+      "accessible": "Accessible & XR Ready",
+      "accessible_desc": "Inclusive UI design, offline localization, and future VR/AR/XR guidance for training and hazard visualization."
+    }
+  },
+  "gallery": {
+    "images": {
+      "field": "Field deployment demonstration",
+      "field_alt": "Deployment in Remote Area",
+      "medical": "Medical assistance scenario",
+      "medical_alt": "Medical Assistance",
+      "logistics": "Resource coordination interface",
+      "logistics_alt": "Logistics Coordination",
+      "communication": "Offline communication setup",
+      "communication_alt": "Communication Setup"
+    }
+  },
+  "writeup": {
+    "cards": {
+      "tactical": "Silent Tactical Triage",
+      "tactical_desc": "Touch-only injury selection with written guidance based on TCCC clinical rules.",
+      "uxo": "UXO Vision Detection",
+      "uxo_desc": "Detects likely unexploded ordnance and recommends safe actions when approaching suspicious objects.",
+      "mesh": "Mesh Danger Mapping",
+      "mesh_desc": "Peer-to-peer hazard sharing and route avoidance without internet or centralized servers.",
+      "family": "Family Reunification",
+      "family_desc": "Privacy-preserving matching via Bloom filters exchanged over Bluetooth."
+    }
+  },
+  "coverage": {
+    "android": "Android App",
+    "android_desc": "Primary deployment for field devices, optimized for offline Gemma 4 E2B inference.",
+    "ios": "iOS Support",
+    "ios_desc": "Planned companion app for Apple devices, preserving offline and secure operation.",
+    "windows": "Windows Format",
+    "windows_desc": "Desktop/rugged PC support for coordination hubs and humanitarian command centers.",
+    "xr": "VR / AR / XR",
+    "xr_desc": "Future-ready immersive interfaces for training, hazard annotation, and accessible visual guidance."
+  }
+} 

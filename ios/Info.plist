@@ -1,0 +1,13 @@
+<key>NSCameraUsageDescription</key>
+<string>Camera needed for UXO recognition</string>
+<key>NSMicrophoneUsageDescription</key>
+<string>Microphone needed for voice commands</string>
+<key>NSBluetoothAlwaysUsageDescription</key>
+<string>Bluetooth needed for mesh networking</string>
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>Location needed for danger zone mapping</string>
+<key>UIBackgroundModes</key>
+<array>
+    <string>bluetooth-central</string>
+    <string>bluetooth-peripheral</string>
+</array>
